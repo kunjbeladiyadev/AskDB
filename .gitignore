@@ -1,0 +1,82 @@
+# ==============================================================================
+# AskDB Project .gitignore
+# Covers Python backend, Node/React frontend, databases, secrets, and IDEs
+# ==============================================================================
+
+# Environment Variables & Secrets (NEVER COMMIT SECRETS)
+.env
+.env.*
+*.env
+!.env.example
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+backend/.venv/
+
+# Python Bytecode, Cache & Packaging
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.pytest_cache/
+.coverage
+.cache/
+coverage.xml
+htmlcov/
+*.egg-info/
+.tox/
+
+# Node.js & Frontend Dependencies / Builds
+node_modules/
+frontend/node_modules/
+dist/
+build/
+frontend/dist/
+frontend/dist-ssr/
+.vite/
+frontend/.vite/
+.eslintcache
+.pnp
+.pnp.js
+
+# Database Files & Vector Stores (Local storage generated at runtime)
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+chroma_data/
+backend/chroma_data/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDEs & Code Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
